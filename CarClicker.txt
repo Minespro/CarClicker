@@ -28,7 +28,7 @@ Buildings
   name: Car Designers
   desc: These people design your brand new car models. Creates 1 Car per second
   cost: 100 cars
-  on tick: yield 1 cars
+  on tick:yield 1 cars
 
 *CarPrinters
   name: Car Printer
