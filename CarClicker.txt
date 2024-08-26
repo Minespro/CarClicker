@@ -1,0 +1,59 @@
+Let's make a game
+name:Car Clicker V0.1 Beta
+by:Minespro
+desc:You own a Car dealership and must expand it. Beat your rivals and destroy them by all means. Make them <#ff0000><b>Suffer!</b></#> Even if that means using some rather shady ways...
+
+settings
+background: https://c4.wallpaperflare.com/wallpaper/728/158/348/sunset-blur-gradation-wallpaper-preview.jpg
+building cost increase: 120x
+
+resources
+*cars
+  name: Car|Cars
+  desc:The current amount of cars your dealership produced
+  icon: https://www.shutterstock.com/image-vector/sports-car-icon-600w-321480158.jpg
+  show earned
+
+buttons
+*ClickerButton
+  name:Create a Car
+  desc:Click here to create a car
+  on click:yield 1 cars
+  show clicks
+  class: bigButton
+  icon: https://i.pinimg.com/474x/38/8a/3e/388a3e1b99fd2492c267f14afe23d5ab.jpg
+
+buildings
+*CarDesigners
+  name: Car Designers
+  desc: These people design your brand new car models. Creates 1 Car per second
+  cost: 100 cars
+  on tick: yield 1 cars
+
+*CarPrinters
+  name: Car Printer
+  desc: Takes your car designers and sacrifices their ideas and lives to make this printer. Creates 15 cars per second
+  cost: 1000 cars and 5 CarDesigners
+  on tick: yield 15 cars
+  req: 5 CarDesigners:max
+
+*CarQuantumFuser
+  name: Quantum Fusion
+  desc: Use advanced particle creating technology to generate cars out of thin air. Has a 33% chance to create 100 cars.
+  cost: 15000 cars
+  req: 5 CarPrinters:max
+  on tick: if (chance(33%)) yield 100 cars
+
+*Duplicator
+  name: Car Duplicator 2000
+  desc: This is an advanced car duplicator that automatically duplicates cars. Creates 500 cars per second.
+  cost: 30000 cars
+  on tick: yield 500 cars
+  req: 2 CarQuantumFuser:max and 1000 ClickerButton:Clicks
+
+*Teleporter
+  name: Teleporter
+  desc: This device teleports cars out of your rival's dealership and into yours. Creates 100000 cars per second
+  on tick: yield 10000 cars
+  req: 3 Duplicator:max and 100000 cars:earned
+  cost: 100000 cars
