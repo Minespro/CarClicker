@@ -1,4 +1,4 @@
-Let's make a game
+Let's make a game!
 name:Car Clicker V0.1 Beta
 by:Minespro
 desc:You own a Car dealership and must expand it. Beat your rivals and destroy them by all means. Make them <#ff0000><b>Suffer!</b></#> Even if that means using some rather shady ways...
