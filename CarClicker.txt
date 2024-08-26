@@ -34,7 +34,7 @@ Buildings
   name: Car Printer
   desc: Takes your car designers and sacrifices their ideas and lives to make this printer. Creates 15 cars per second
   cost: 1000 cars and 5 CarDesigners
-  on tick: yield 15 cars
+  on tick:yield 15 cars
   req: 5 CarDesigners:max
 
 *CarQuantumFuser
