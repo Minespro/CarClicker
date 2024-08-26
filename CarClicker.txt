@@ -8,14 +8,14 @@ Settings
 background: https://c4.wallpaperflare.com/wallpaper/728/158/348/sunset-blur-gradation-wallpaper-preview.jpg
 building cost increase: 120x
 
-resources
+Resources
 *cars
   name: Car|Cars
   desc:The current amount of cars your dealership produced
   icon: https://www.shutterstock.com/image-vector/sports-car-icon-600w-321480158.jpg
   show earned
 
-buttons
+Buttons
 *ClickerButton
   name:Create a Car
   desc:Click here to create a car
