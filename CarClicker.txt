@@ -21,7 +21,6 @@ Buttons
   desc:Click here to create a car
   on click:yield 1 cars
   show clicks
-  class: bigButton
   icon: https://i.pinimg.com/474x/38/8a/3e/388a3e1b99fd2492c267f14afe23d5ab.jpg
 
 Buildings
