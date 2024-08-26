@@ -4,7 +4,7 @@ name:Car Clicker V0.1 Beta
 by:Minespro
 desc:You own a Car dealership and must expand it. Beat your rivals and destroy them by all means. Make them <#ff0000><b>Suffer!</b></#> Even if that means using some rather shady ways...
 
- Settings
+Settings
 background: https://c4.wallpaperflare.com/wallpaper/728/158/348/sunset-blur-gradation-wallpaper-preview.jpg
 building cost increase: 120x
 
@@ -24,7 +24,7 @@ Buttons
   class: bigButton
   icon: https://i.pinimg.com/474x/38/8a/3e/388a3e1b99fd2492c267f14afe23d5ab.jpg
 
-buildings
+Buildings
 *CarDesigners
   name: Car Designers
   desc: These people design your brand new car models. Creates 1 Car per second
