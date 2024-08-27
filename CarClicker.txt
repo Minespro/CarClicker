@@ -50,7 +50,7 @@ Buildings
   desc:This is an advanced car duplicator that automatically duplicates cars. Creates 500 cars per second.
   cost:30000 cars
   on tick:yield 500 cars
-  req:2 CarQuantumFuser:max and 1000 ClickerButton:Clicks
+  req:2 CarQuantumFuser:max
 
 *Teleporter
   name:Teleporter
