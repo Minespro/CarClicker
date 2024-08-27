@@ -99,15 +99,15 @@ Upgrades
   name:Car Printer Upgrade 1
   desc:Car printers now work twice as efficient
   cost:500 cars
-  req:400 cars:max and 2 CarPrinter:max
-  passive:multiply yield of CarPrinter by 2
+  req:400 cars:max and 2 CarPrinters:max
+  passive:multiply yield of CarPrinters by 2
 
 *CarPrinterUpgrade2
   name:Car Printer Upgrade 2
   desc:Car printers now work 4x as efficient
   cost:1500 cars
-  req:10 CarPrinter:max and CarPrinterUpgrade1
-  passive:multiply yield of CarPrinter by 2
+  req:10 CarPrinters:max and CarPrinterUpgrade1
+  passive:multiply yield of CarPrinters by 2
 
 *TimeSpeeder
   name:TimeSpeeder v2.0
