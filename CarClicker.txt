@@ -42,7 +42,7 @@ Buildings
   desc: Use advanced particle creating technology to generate cars out of thin air. Has a 33% chance to create 100 cars.
   cost: 15000 cars
   req: 5 CarPrinters:max
-  on tick:if (chance(33%)) yield 100 cars
+  on tick:if (chance(33%)) yield cars
 
 *Duplicator
   name: Car Duplicator 2000
