@@ -5,14 +5,14 @@ by:Minespro
 desc:You own a Car dealership and must expand it. Beat your rivals and destroy them by all means. Make them <#ff0000><b>Suffer!</b></#> Even if that means using some rather shady ways...
 
 Settings
-background: https://c4.wallpaperflare.com/wallpaper/728/158/348/sunset-blur-gradation-wallpaper-preview.jpg
-building cost increase: 120x
+background:https://c4.wallpaperflare.com/wallpaper/728/158/348/sunset-blur-gradation-wallpaper-preview.jpg
+building cost increase:120x
 
 Resources
 *cars
-  name: Car|Cars
+  name:Car|Cars
   desc:The current amount of cars your dealership produced
-  icon: https://www.shutterstock.com/image-vector/sports-car-icon-600w-321480158.jpg
+  icon:https://www.shutterstock.com/image-vector/sports-car-icon-600w-321480158.jpg
   show earned
 
 Buttons
@@ -21,190 +21,191 @@ Buttons
   desc:Click here to create a car
   on click:yield 1 cars
   show clicks
-  icon: https://i.pinimg.com/474x/38/8a/3e/388a3e1b99fd2492c267f14afe23d5ab.jpg
+  icon:https://i.pinimg.com/474x/38/8a/3e/388a3e1b99fd2492c267f14afe23d5ab.jpg
+  class:bigButton
 
 Buildings
 *CarDesigners
-  name: Car Designers
-  desc: These people design your brand new car models. Creates 1 Car per second
-  cost: 100 cars
+  name:Car Designers
+  desc:These people design your brand new car models. Creates 1 Car per second
+  cost:100 cars
   on tick:yield 1 cars
 
 *CarPrinters
-  name: Car Printer
-  desc: Takes your car designers and sacrifices their ideas and lives to make this printer. Creates 15 cars per second
-  cost: 1000 cars and 5 CarDesigners
+  name:Car Printer
+  desc:Takes your car designers and sacrifices their ideas and lives to make this printer. Creates 15 cars per second
+  cost:1000 cars and 5 CarDesigners
   on tick:yield 15 cars
   req:5 CarDesigners:max
 
 *CarQuantumFuser
-  name: Quantum Fusion
-  desc: Use advanced particle creating technology to generate cars out of thin air. Has a 33% chance to create 100 cars.
-  cost: 15000 cars
-  req: 5 CarPrinters:max
+  name:Quantum Fusion
+  desc:Use advanced particle creating technology to generate cars out of thin air. Has a 33% chance to create 100 cars.
+  cost:15000 cars
+  req:5 CarPrinters:max
   on tick:if (chance(33%)) yield cars
 
 *Duplicator
-  name: Car Duplicator 2000
-  desc: This is an advanced car duplicator that automatically duplicates cars. Creates 500 cars per second.
-  cost: 30000 cars
-  on tick: yield 500 cars
-  req: 2 CarQuantumFuser:max and 1000 ClickerButton:Clicks
+  name:Car Duplicator 2000
+  desc:This is an advanced car duplicator that automatically duplicates cars. Creates 500 cars per second.
+  cost:30000 cars
+  on tick:yield 500 cars
+  req:2 CarQuantumFuser:max and 1000 ClickerButton:Clicks
 
 *Teleporter
-  name: Teleporter
-  desc: This device teleports cars out of your rival's dealership and into yours. Creates 100000 cars per second
-  on tick: yield 10000 cars
-  req: 3 Duplicator:max and 100000 cars:earned
-  cost: 100000 cars
+  name:Teleporter
+  desc:This device teleports cars out of your rival's dealership and into yours. Creates 100000 cars per second
+  on tick:yield 10000 cars
+  req:3 Duplicator:max and 100000 cars:earned
+  cost:100000 cars
 
 Upgrades
 *ClickerUpgrade1
-  name: Click Upgrade 1
-  desc: You now recieves 2 cars per click.
-  cost: 100 cars
-  req: 50 cars:max
-  passive: increase cars yield of ClickerButton by 1
+  name:Click Upgrade 1
+  desc:You now recieves 2 cars per click.
+  cost:100 cars
+  req:50 cars:max
+  passive:increase cars yield of ClickerButton by 1
 
 *ClickerUpgrade2
-  name: Click Upgrade 2
-  desc: Your clicks are now multiplied by 2
-  cost: 250 cars
-  req: have ClickerUpgrade1
-  passive: multiply cars yield of ClickerButton by 2
+  name:Click Upgrade 2
+  desc:Your clicks are now multiplied by 2
+  cost:250 cars
+  req:have ClickerUpgrade1
+  passive:multiply cars yield of ClickerButton by 2
 
 *ClickerUpgrade3
-  name: Click Upgrade 3
-  desc: Your clicks are now multiplied by 3
-  cost: 750 cars
-  req: have ClickerUpgrade2
-  passive: multiply cars yield of ClickerButton by 3
+  name:Click Upgrade 3
+  desc:Your clicks are now multiplied by 3
+  cost:750 cars
+  req:have ClickerUpgrade2
+  passive:multiply cars yield of ClickerButton by 3
 
 *ClickerUpgrade4
-  name: Click Upgrade 4
-  desc: Your clicks are now multiplied by 10
-  cost: 5000 cars
-  req: have ClickerUpgrade3 
-  passive: multiply cars yield of ClickerButton by 10
+  name:Click Upgrade 4
+  desc:Your clicks are now multiplied by 10
+  cost:5000 cars
+  req:have ClickerUpgrade3 
+  passive:multiply cars yield of ClickerButton by 10
 
 *ClickerUpgrade5
-  name: Click Upgrade 5
-  desc: The final clicker upgrade. Multiplies your clicks by 10000
-  cost: 500000 cars
-  req: have ClickerUpgrade4 and 100000 cars:max
-  passive: multiply cars yield of ClickerButton by 10000
+  name:Click Upgrade 5
+  desc:The final clicker upgrade. Multiplies your clicks by 10000
+  cost:500000 cars
+  req:have ClickerUpgrade4 and 100000 cars:max
+  passive:multiply cars yield of ClickerButton by 10000
 
 *CarPrinterUpgrade1
-  name: Car Printer Upgrade 1
-  desc: Car printers now work twice as efficient
-  cost: 500 cars
-  req: 400 cars:max and 2 CarPrinter:max
-  passive: multiply yield of CarPrinter by 2
+  name:Car Printer Upgrade 1
+  desc:Car printers now work twice as efficient
+  cost:500 cars
+  req:400 cars:max and 2 CarPrinter:max
+  passive:multiply yield of CarPrinter by 2
 
 *CarPrinterUpgrade2
-  name: Car Printer Upgrade 2
-  desc: Car printers now work 4x as efficient
-  cost: 1500 cars
-  req: 10 CarPrinter:max and CarPrinterUpgrade1
-  passive: multiply yield of CarPrinter by 2
+  name:Car Printer Upgrade 2
+  desc:Car printers now work 4x as efficient
+  cost:1500 cars
+  req:10 CarPrinter:max and CarPrinterUpgrade1
+  passive:multiply yield of CarPrinter by 2
 
 *TimeSpeeder
-  name: TimeSpeeder v2.0
-  desc: Speeds up times and doubles all earnings.
+  name:TimeSpeeder v2.0
+  desc:Speeds up times and doubles all earnings.
   hidden when 0
-  passive: multiply yield of cars by 2
+  passive:multiply yield of cars by 2
 
 Shinies
 *shiny1
-  frequency: 60
-  name: Car donation
-  movement: anywhere
-  duration: 10
-  on click: yield 250 cars
-  on click: if (chance(5%)) yield 1 TimeSpeeder
+  frequency:60
+  name:Car donation
+  movement:anywhere
+  duration:10
+  on click:yield 250 cars
+  on click:if (chance(5%)) yield 1 TimeSpeeder
 
 Achievements
 *carsamount1
-  name: Beginner Car Dealership
-  desc: Own 100 cars
-  req: 100 cars
+  name:Beginner Car Dealership
+  desc:Own 100 cars
+  req:100 cars
 
 *carsamount2
-  name: Thriving Car dealership
-  desc: Own 1000 cars
-  req: 1000 cars
+  name:Thriving Car dealership
+  desc:Own 1000 cars
+  req:1000 cars
 
 *carsamount3
-  name: Successful Car dealership
-  desc: Own 10000 cars
-  req: 10000 cars
+  name:Successful Car dealership
+  desc:Own 10000 cars
+  req:10000 cars
 
 *carsamount4
-  name: Worldwide Car dealership
-  desc: Own 50000 cars
-  req: 50000 cars
+  name:Worldwide Car dealership
+  desc:Own 50000 cars
+  req:50000 cars
 
 *carsamount5
-  name: Everyone knows you now
-  desc: Own 100000 cars
-  req: 100000 cars
+  name:Everyone knows you now
+  desc:Own 100000 cars
+  req:100000 cars
 
 *carsamount6
-  name: OK calm down now, maybe take a break
-  desc: Own 1000000 cars
-  req: 1000000 cars
+  name:OK calm down now, maybe take a break
+  desc:Own 1000000 cars
+  req:1000000 cars
 
 *carsamount7
-  name: ARE YOU CRAZY!!??!?
-  desc: Own 10000000 cars
-  req: 10000000 cars
+  name:ARE YOU CRAZY!!??!?
+  desc:Own 10000000 cars
+  req:10000000 cars
 
 *carsamount8
-  name: You achieved peace and own 100000000
-  desc: Everyone owns your cars. NO other dealerships exist. You won. 
-  req: 100000000 cars
+  name:You achieved peace
+  desc:Everyone owns your cars. NO other dealerships exist. You won. 
+  req:100000000 cars
 
 *Clicker1
-  name: Beginner Clicker
-  desc: Click 100 times
-  req: 100 button:clicks
+  name:Beginner Clicker
+  desc:Click 100 times
+  req:100 button:clicks
 
 *Clicker2
-  name: Amatuer Clicker
-  desc: Click 1000 times
-  req: 1000 button:clicks
+  name:Amatuer Clicker
+  desc:Click 1000 times
+  req:1000 button:clicks
 
 *Clicker3
-  name: Pro Clicker
-  desc: Click 5000 times
-  req: 5000 button:clicks
+  name:Pro Clicker
+  desc:Click 5000 times
+  req:5000 button:clicks
 
 *Clicker4
-  name: Expert Clicker
-  desc: Click 10000 times
-  req: 10000 button:clicks
+  name:Expert Clicker
+  desc:Click 10000 times
+  req:10000 button:clicks
 
 *Clicker5
-  name: Master Clicker
-  desc: Click 50000 times
-  req: 50000 button:clicks
+  name:Master Clicker
+  desc:Click 50000 times
+  req:50000 button:clicks
 
 *Clicker6
-  name: Godly Clicker
-  desc: Click 100000 times
-  req: 100000 button:clicks
+  name:Godly Clicker
+  desc:Click 100000 times
+  req:100000 button:clicks
 
 *Clicker7
-  name: Are you fingers not broken
-  desc: Click 1000000 times
-  req: 1000000 button:clicks
+  name:Are you fingers not broken
+  desc:Click 1000000 times
+  req:1000000 button:clicks
 
 *Clicker8
-  name: Ok we get it, you like autoclickers
-  desc: Click 10000000 times
-  req: 100000000 button:clicks
+  name:Ok we get it, you like autoclickers
+  desc:Click 10000000 times
+  req:100000000 button:clicks
 
 *Clicker9
-  name: STOP PLAYING NOW, YOU BROKE YOUR HANDS.
-  desc: Click 100000000 times. I think you deserve an award.
-  req: 100000000 button:clicks
+  name:STOP PLAYING NOW, YOU BROKE YOUR HANDS.
+  desc:Click 100000000 times. I think you deserve an award.
+  req:100000000 button:clicks
