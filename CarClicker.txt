@@ -41,7 +41,7 @@ Buildings
   name: Quantum Fusion
   desc: Use advanced particle creating technology to generate cars out of thin air. Has a 33% chance to create 100 cars.
   cost: 15000 cars
-  req: 5 CarPrinters:max
+  req: 5 CarPrinters:max and 100 cars:max
   on tick:if (chance(33%)) yield cars
 
 *Duplicator
