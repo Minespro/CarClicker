@@ -168,44 +168,44 @@ Achievements
 *Clicker1
   name:Beginner Clicker
   desc:Click 100 times
-  req:100 button:clicks
+  req:100 ClickerButton:clicks
 
 *Clicker2
   name:Amatuer Clicker
   desc:Click 1000 times
-  req:1000 button:clicks
+  req:1000 ClickerButton:clicks
 
 *Clicker3
   name:Pro Clicker
   desc:Click 5000 times
-  req:5000 button:clicks
+  req:5000 ClickerButton:clicks
 
 *Clicker4
   name:Expert Clicker
   desc:Click 10000 times
-  req:10000 button:clicks
+  req:10000 ClickerButton:clicks
 
 *Clicker5
   name:Master Clicker
   desc:Click 50000 times
-  req:50000 button:clicks
+  req:50000 ClickerButton:clicks
 
 *Clicker6
   name:Godly Clicker
   desc:Click 100000 times
-  req:100000 button:clicks
+  req:100000 ClickerButton:clicks
 
 *Clicker7
   name:Are you fingers not broken
   desc:Click 1000000 times
-  req:1000000 button:clicks
+  req:1000000 ClickerButton:clicks
 
 *Clicker8
   name:Ok we get it, you like autoclickers
   desc:Click 10000000 times
-  req:100000000 button:clicks
+  req:100000000 ClickerButton:clicks
 
 *Clicker9
   name:STOP PLAYING NOW, YOU BROKE YOUR HANDS.
   desc:Click 100000000 times. I think you deserve an award.
-  req:100000000 button:clicks
+  req:100000000 ClickerButton:clicks
