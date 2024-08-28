@@ -24,6 +24,11 @@ Buttons
   icon:https://i.pinimg.com/474x/38/8a/3e/388a3e1b99fd2492c267f14afe23d5ab.jpg
   class:bigButton
 
+*DevButton
+  name:Dev Button
+  desc:Developer Only button. Adds 100000 cars
+  on click:yield 100000 cars
+
 Buildings
 *CarDesigners
   name:Car Designers
